@@ -24,6 +24,7 @@ MERGED from com.android.support:support-v4:22.0.0:22:5
 MERGED from com.facebook.android:facebook-android-sdk:4.0.0:28:5
 MERGED from com.android.support:support-v4:22.0.0:22:5
 MERGED from com.github.markushi:circlebutton:1.1:9:5
+MERGED from com.github.medyo:fancybuttons:1.2:11:5
 	android:label
 		ADDED from AndroidManifest.xml:11:9
 	android:allowBackup
@@ -84,6 +85,18 @@ ADDED from AndroidManifest.xml:40:9
 		ADDED from AndroidManifest.xml:42:13
 	android:name
 		ADDED from AndroidManifest.xml:41:13
+activity#com.example.teeshirt.drinksapp.Latest
+ADDED from AndroidManifest.xml:44:9
+	android:label
+		ADDED from AndroidManifest.xml:46:13
+	android:name
+		ADDED from AndroidManifest.xml:45:13
+activity#com.example.teeshirt.drinksapp.Categories
+ADDED from AndroidManifest.xml:48:9
+	android:label
+		ADDED from AndroidManifest.xml:50:13
+	android:name
+		ADDED from AndroidManifest.xml:49:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:22.0.0:20:5
@@ -91,6 +104,7 @@ MERGED from com.android.support:support-v4:22.0.0:20:5
 MERGED from com.facebook.android:facebook-android-sdk:4.0.0:24:5
 MERGED from com.android.support:support-v4:22.0.0:20:5
 MERGED from com.github.markushi:circlebutton:1.1:7:5
+MERGED from com.github.medyo:fancybuttons:1.2:7:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0

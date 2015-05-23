@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:text="Check out what other people are saying about your favorite drink"
         android:layout_marginTop="60dp"
-        android:textSize="30dp"
+        android:textSize="15dp"
         android:padding="5dp"
         android:layout_marginLeft="50dp"
         android:id="@+id/textView" />
@@ -24,12 +24,12 @@
     <at.markushi.ui.CircleButton
         android:layout_width="64dip"
         android:layout_height="64dip"
-        android:text="NEXT"
-        android:textColor="#fff"
-        app:cb_color="#f00"
+        android:src="@drawable/next"
+        app:cb_color="#FF9100"
         app:cb_pressedRingWidth="8dip"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:id="@+id/cb"
         />
 </RelativeLayout>
 <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/src/main/res/layout/activity_main.xml -->

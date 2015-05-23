@@ -47,6 +47,14 @@
             android:name="com.example.teeshirt.drinksapp.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Latest"
+            android:label="@string/title_activity_latest" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Categories"
+            android:label="@string/title_activity_categories" >
+        </activity>
     </application>
 
 </manifest>

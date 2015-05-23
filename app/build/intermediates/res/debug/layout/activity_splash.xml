@@ -4,11 +4,20 @@
     tools:context="com.example.teeshirt.drinksapp.splash"
     android:background="#000">
 
+
+
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:src="@drawable/blackwhiskysplash"/>
 
 
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="DrinksApp"
+        android:textSize="40dp"/>-->
 </RelativeLayout>
 <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/src/main/res/layout/activity_splash.xml -->
