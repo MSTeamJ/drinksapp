@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.parse.ParseObject;
+
 import mehdi.sakout.fancybuttons.FancyButton;
 
 
@@ -21,10 +23,12 @@ public class Latest extends ActionBarActivity {
         all.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i  = new Intent(Latest.this, Categories.class);
+                Intent i = new Intent(Latest.this, Categories.class);
                 startActivity(i);
             }
         });
+
+
     }
 
 

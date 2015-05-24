@@ -30,8 +30,8 @@ public final class R {
 		public static final int textSize = 0x7f01002f;
 	}
 	public static final class dimen {
-		public static final int activity_horizontal_margin = 0x7f08002a;
-		public static final int activity_vertical_margin = 0x7f08002b;
+		public static final int activity_horizontal_margin = 0x7f08002e;
+		public static final int activity_vertical_margin = 0x7f08002f;
 	}
 	public static final class id {
 		public static final int bottom = 0x7f090013;

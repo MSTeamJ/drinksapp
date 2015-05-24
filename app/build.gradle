@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.teeshirt.drinksapp"
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -29,4 +29,8 @@ dependencies {
     compile 'com.facebook.android:facebook-android-sdk:4.0.0'
     compile 'com.github.markushi:circlebutton:1.1'
     compile 'com.github.medyo:fancybuttons:1.2@aar'
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    compile 'com.parse.bolts:bolts-android:1.+'
+    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
+
 }

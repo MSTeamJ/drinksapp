@@ -13,10 +13,11 @@
         fancy:borderColor="#fff"
         fancy:borderWidth="2dp"
         fancy:defaultColor="#001A1111"
-        fancy:focusColor="#000"
+        fancy:focusColor="#fff"
         fancy:radius="6dp"
         fancy:text="SEE ALL"
         fancy:textColor="#fff"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
 
 </RelativeLayout>

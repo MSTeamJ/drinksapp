@@ -28,7 +28,11 @@ public class splash extends ActionBarActivity {
             }
         };
         splash.start();
+
+
+
     }
+
 
 
 
