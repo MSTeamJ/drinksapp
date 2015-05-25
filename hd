@@ -1,0 +1,35 @@
+[33mcommit 5fe22fb5251b9c9d62c47ba90fc015cbfc4a2901[m
+Author: owuor91 <owuor91@gmail.com>
+Date:   Sun May 24 19:22:05 2015 +0300
+
+    Integrate parse.com backend
+
+[33mcommit b43f854e634c80b6dfe37faef62570dcc89c83df[m
+Author: owuor91 <owuor91@gmail.com>
+Date:   Sat May 23 18:49:26 2015 +0300
+
+    Added and linked 2 activities
+
+[33mcommit e439e176ab1a3e8c6085284f510d05c8570dc45a[m
+Author: owuor91 <owuor91@gmail.com>
+Date:   Tue May 12 10:52:09 2015 +0300
+
+    Added about activity
+
+[33mcommit 3ae98bd19d5d2b29d1c99ac971226884ff53607b[m
+Author: owuor91 <owuor91@gmail.com>
+Date:   Mon May 11 10:30:26 2015 +0300
+
+    Added mainactivity
+
+[33mcommit 333cd5dddf8fbf4f564567661ee4174ea195f481[m
+Author: owuor91 <owuor91@gmail.com>
+Date:   Thu May 7 14:02:09 2015 +0300
+
+    Added Age confirmation
+
+[33mcommit ac391e872d627fc98b603aba6a64023bfcf4462d[m
+Author: owuor91 <owuor91@gmail.com>
+Date:   Thu May 7 13:35:18 2015 +0300
+
+    Splash and Login activity done

@@ -25,9 +25,6 @@ public class MainActivity extends ActionBarActivity {
         Parse.initialize(this, "rX8Lvsu6lSbJtNBv68dau6PXdwBIIxpat5yhb8Oi", "8mSAWHT06DWuziC80L8K0NQ2g5tvC90c9x7cFwuq");
 
 
-        ParseObject testObject = new ParseObject("TestObject");
-        testObject.put("foo", "bar");
-        testObject.saveInBackground();
 
         CircleButton cb = (CircleButton)findViewById(R.id.cb);
         cb.setOnClickListener(new View.OnClickListener() {

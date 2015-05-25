@@ -13,7 +13,7 @@
         fancy:borderColor="#fff"
         fancy:borderWidth="2dp"
         fancy:defaultColor="#001A1111"
-        fancy:focusColor="#fff"
+        fancy:focusColor="#ff9100"
         fancy:radius="6dp"
         fancy:text="SEE ALL"
         fancy:textColor="#fff"

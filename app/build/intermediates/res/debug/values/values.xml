@@ -159,6 +159,8 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="blue_sub_action_button_content_margin">16dp</dimen>
+    <dimen name="blue_sub_action_button_size">100dp</dimen>
     <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.0.0/res/values/values.xml -->
     <eat-comment/>
     <dimen name="com_facebook_likeboxcountview_border_radius">3dp</dimen>
@@ -188,6 +190,16 @@
     <item name="dialog_fixed_width_minor" type="dimen">320dp</item>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="radius_large">120dp</dimen>
+    <dimen name="radius_medium">72dp</dimen>
+    <dimen name="radius_small">30dp</dimen>
+    <dimen name="red_action_button_content_margin">36dp</dimen>
+    <dimen name="red_action_button_content_size">16dp</dimen>
+    <dimen name="red_action_button_margin">48dp</dimen>
+    <dimen name="red_action_button_size">108dp</dimen>
+    <dimen name="red_action_menu_radius">96dp</dimen>
     <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/build/intermediates/exploded-aar/com.oguzdev/CircularFloatingActionMenu/1.0.2/res/values/values.xml -->
     <eat-comment/>
     <dimen name="sub_action_button_content_margin">6dp</dimen>
