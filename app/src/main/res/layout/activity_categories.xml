@@ -1,8 +1,141 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
-    android:background="#000"
+    android:background="@drawable/beer"
     tools:context="com.example.teeshirt.drinksapp.Categories">
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/beer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fancy:textSize="10dp"
+        fancy:borderColor="#fff"
+        fancy:borderWidth="2dp"
+        fancy:defaultColor="#001A1111"
+        fancy:focusColor="#ff9100"
+        fancy:radius="6dp"
+        fancy:text="Beer"
+        fancy:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/brandy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fancy:textSize="10dp"
+        fancy:borderColor="#fff"
+        fancy:borderWidth="2dp"
+        fancy:defaultColor="#001A1111"
+        fancy:focusColor="#ff9100"
+        fancy:radius="6dp"
+        fancy:text="Brandy"
+        fancy:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/beer"/>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/gin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fancy:textSize="10dp"
+        fancy:borderColor="#fff"
+        fancy:borderWidth="2dp"
+        fancy:defaultColor="#001A1111"
+        fancy:focusColor="#ff9100"
+        fancy:radius="6dp"
+        fancy:text="Gin"
+        fancy:textColor="#000"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/brandy"/>
+
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/liqueur"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fancy:textSize="10dp"
+        fancy:borderColor="#fff"
+        fancy:borderWidth="2dp"
+        fancy:defaultColor="#001A1111"
+        fancy:focusColor="#ff9100"
+        fancy:radius="6dp"
+        fancy:text="Liqueur"
+        fancy:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/gin"/>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/rum"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fancy:textSize="10dp"
+        fancy:borderColor="#fff"
+        fancy:borderWidth="2dp"
+        fancy:defaultColor="#001A1111"
+        fancy:focusColor="#ff9100"
+        fancy:radius="6dp"
+        fancy:text="Rum"
+        fancy:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/liqueur"/>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/vodka"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fancy:textSize="10dp"
+        fancy:borderColor="#fff"
+        fancy:borderWidth="2dp"
+        fancy:defaultColor="#001A1111"
+        fancy:focusColor="#ff9100"
+        fancy:radius="6dp"
+        fancy:text="Vodka"
+        fancy:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/rum"/>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/whiskey"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fancy:textSize="10dp"
+        fancy:borderColor="#fff"
+        fancy:borderWidth="2dp"
+        fancy:defaultColor="#001A1111"
+        fancy:focusColor="#ff9100"
+        fancy:radius="6dp"
+        fancy:text="Whiskey"
+        fancy:textColor="#fff"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/vodka"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/wine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        fancy:textSize="10dp"
+        fancy:borderColor="#fff"
+        fancy:borderWidth="2dp"
+        fancy:defaultColor="#001A1111"
+        fancy:focusColor="#ff9100"
+        fancy:radius="6dp"
+        fancy:text="Wine"
+        fancy:textColor="#fff"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/whiskey"/>
+
+
+
+
 
 
 
