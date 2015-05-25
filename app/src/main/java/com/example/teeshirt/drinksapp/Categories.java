@@ -6,39 +6,28 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 
 
 
 public class Categories extends ActionBarActivity {
+    ListView listView;
+    String[] categories = {"Beer","Brandy","Gin","Liqueur","Rum","Tequilla","Vodka","Whiskey","Wine"};
+    Integer[] icons = {R.drawable.beer, R.drawable.brandy, R.drawable.gin, R.drawable.liqueur, R.drawable.rum, R.drawable.tequilla,R.drawable.vodka, R.drawable.whiskey, R.drawable.wine};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categories);
 
+        listView = (ListView)findViewById(R.id.listView);
+        ListAdapter adapter = new ListAdapter(Categories.this, categories, icons);
+
+        listView.setAdapter(adapter);
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_categories, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

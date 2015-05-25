@@ -6,20 +6,6 @@
     tools:context="com.example.teeshirt.drinksapp.Categories">
 
 
-    <mehdi.sakout.fancybuttons.FancyButton
-        android:id="@+id/beer"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        fancy:textSize="10dp"
-        fancy:borderColor="#fff"
-        fancy:borderWidth="2dp"
-        fancy:defaultColor="#001A1111"
-        fancy:focusColor="#ff9100"
-        fancy:radius="6dp"
-        fancy:text="Beer"
-        fancy:textColor="#fff"
-        android:layout_marginBottom="20dp"
-        android:layout_marginTop="30dp"/>
 
 
     <mehdi.sakout.fancybuttons.FancyButton
@@ -35,6 +21,7 @@
         fancy:text="Brandy"
         fancy:textColor="#fff"
         android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/beer"/>
 
 
@@ -66,7 +53,7 @@
         fancy:focusColor="#ff9100"
         fancy:radius="6dp"
         fancy:text="Liqueur"
-        fancy:textColor="#fff"
+        fancy:textColor="#000"
         android:layout_marginBottom="20dp"
         android:layout_below="@+id/gin"/>
 
