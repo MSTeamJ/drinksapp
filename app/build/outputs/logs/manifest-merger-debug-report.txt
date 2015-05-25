@@ -109,7 +109,6 @@ MERGED from com.facebook.android:facebook-android-sdk:4.0.0:24:5
 MERGED from com.android.support:support-v4:22.0.0:20:5
 MERGED from com.github.markushi:circlebutton:1.1:7:5
 MERGED from com.github.medyo:fancybuttons:1.2:7:5
-MERGED from com.oguzdev:CircularFloatingActionMenu:1.0.2:7:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
