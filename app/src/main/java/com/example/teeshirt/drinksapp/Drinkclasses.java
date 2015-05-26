@@ -34,48 +34,39 @@ public class Drinkclasses extends ActionBarActivity {
 
                 switch(position){
                     case 0:
-                        intent = new Intent(getBaseContext(), Drinktype.class);
-                        intent.putExtra("frag","beer");
+                        intent = new Intent(getBaseContext(), Beer.class);
                         break;
 
                     case 1:
-                        intent = new Intent(getBaseContext(), Drinktype.class);
-                        intent.putExtra("frag","brandy");
+                        intent = new Intent(getBaseContext(), Brandy.class);
                         break;
 
                     case 2:
-                        intent = new Intent(getBaseContext(), Drinktype.class);
-                        intent.putExtra("frag","gin");
+                        intent = new Intent(getBaseContext(), Gin.class);
                         break;
 
                     case 3:
-                        intent = new Intent(getBaseContext(), Drinktype.class);
-                        intent.putExtra("frag","liqueur");
+                        intent = new Intent(getBaseContext(), Liqueur.class);
                         break;
 
                     case 4:
-                        intent = new Intent(getBaseContext(), Drinktype.class);
-                        intent.putExtra("frag","rum");
+                        intent = new Intent(getBaseContext(), Rum.class);
                         break;
 
                     case 5:
-                        intent = new Intent(getBaseContext(), Drinktype.class);
-                        intent.putExtra("frag","tequilla");
+                        intent = new Intent(getBaseContext(), Tequilla.class);
                         break;
 
                     case 6:
-                        intent = new Intent(getBaseContext(), Drinktype.class);
-                        intent.putExtra("frag","vodka");
+                        intent = new Intent(getBaseContext(), Vodka.class);
                         break;
 
                     case 7:
-                        intent = new Intent(getBaseContext(), Drinktype.class);
-                        intent.putExtra("frag","whiskey");
+                        intent = new Intent(getBaseContext(), Whiskey.class);
                         break;
 
                     case 8:
-                        intent = new Intent(getBaseContext(), Drinktype.class);
-                        intent.putExtra("frag","wine");
+                        intent = new Intent(getBaseContext(), Wine.class);
                         break;
                 }
                 startActivity(intent);

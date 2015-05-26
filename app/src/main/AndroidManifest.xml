@@ -63,6 +63,38 @@
             android:name=".Drinktype"
             android:label="@string/title_activity_drinktype" >
         </activity>
+        <activity
+            android:name=".Beer"
+            android:label="@string/title_activity_beer" >
+        </activity>
+        <activity
+            android:name=".Brandy"
+            android:label="@string/title_activity_brandy" >
+        </activity>
+        <activity
+            android:name=".Gin"
+            android:label="@string/title_activity_gin" >
+        </activity>
+        <activity
+            android:name=".Liqueur"
+            android:label="@string/title_activity_liqueur" >
+        </activity>
+        <activity
+            android:name=".Rum"
+            android:label="@string/title_activity_rum" >
+        </activity>
+        <activity
+            android:name=".Tequilla"
+            android:label="@string/title_activity_tequilla" >
+        </activity>
+        <activity
+            android:name=".Vodka"
+            android:label="@string/title_activity_vodka" >
+        </activity>
+        <activity
+            android:name=".Wine"
+            android:label="@string/title_activity_wine" >
+        </activity>
     </application>
 
 </manifest>

@@ -256,14 +256,22 @@
     <string name="messenger_send_button_text">Send</string>
     <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_beer">Beer</string>
+    <string name="title_activity_brandy">Brandy</string>
     <string name="title_activity_categories">Categories</string>
     <string name="title_activity_drinkclasses">Drinkclasses</string>
     <string name="title_activity_drinktype">Drinktype</string>
+    <string name="title_activity_gin">Gin</string>
     <string name="title_activity_latest">Latest</string>
+    <string name="title_activity_liqueur">Liqueur</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_rum">Rum</string>
     <string name="title_activity_splash">splash</string>
+    <string name="title_activity_tequilla">Tequilla</string>
+    <string name="title_activity_vodka">Vodka</string>
     <string name="title_activity_whiskey">Whiskey</string>
+    <string name="title_activity_wine">Wine</string>
     <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Animation.AppCompat.DropDownUp" parent="Base.Animation.AppCompat.DropDownUp"/>

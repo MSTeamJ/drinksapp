@@ -69,6 +69,38 @@
             android:name="com.example.teeshirt.drinksapp.Drinktype"
             android:label="@string/title_activity_drinktype" >
         </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Beer"
+            android:label="@string/title_activity_beer" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Brandy"
+            android:label="@string/title_activity_brandy" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Gin"
+            android:label="@string/title_activity_gin" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Liqueur"
+            android:label="@string/title_activity_liqueur" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Rum"
+            android:label="@string/title_activity_rum" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Tequilla"
+            android:label="@string/title_activity_tequilla" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Vodka"
+            android:label="@string/title_activity_vodka" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Wine"
+            android:label="@string/title_activity_wine" >
+        </activity>
     </application>
 
 </manifest>
