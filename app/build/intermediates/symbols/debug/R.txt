@@ -476,7 +476,7 @@ int id action_menu_presenter 0x7f090003
 int id action_mode_bar 0x7f090044
 int id action_mode_bar_stub 0x7f090043
 int id action_mode_close_button 0x7f090036
-int id action_settings 0x7f090067
+int id action_settings 0x7f090068
 int id activity_chooser_view_content 0x7f090037
 int id all 0x7f090057
 int id always 0x7f090023
@@ -557,6 +557,7 @@ int id standard 0x7f090030
 int id start 0x7f090020
 int id submit_area 0x7f090052
 int id tabMode 0x7f09000b
+int id text1 0x7f090067
 int id textView 0x7f090059
 int id text_details 0x7f090062
 int id title 0x7f09003d
@@ -618,7 +619,8 @@ int layout messenger_button_send_blue_small 0x7f04002c
 int layout messenger_button_send_white_large 0x7f04002d
 int layout messenger_button_send_white_round 0x7f04002e
 int layout messenger_button_send_white_small 0x7f04002f
-int layout support_simple_spinner_dropdown_item 0x7f040030
+int layout rowview 0x7f040030
+int layout support_simple_spinner_dropdown_item 0x7f040031
 int menu menu_categories 0x7f0d0000
 int menu menu_drinkclasses 0x7f0d0001
 int menu menu_drinktype 0x7f0d0002
