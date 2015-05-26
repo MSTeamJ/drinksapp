@@ -9,4 +9,6 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_latest">Latest</string>
     <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_whiskey">Whiskey</string>
+    <string name="title_activity_drinkclasses">Drinkclasses</string>
 </resources>

@@ -57,6 +57,14 @@
             android:name="com.example.teeshirt.drinksapp.Categories"
             android:label="@string/title_activity_categories" >
         </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Whiskey"
+            android:label="@string/title_activity_whiskey" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Drinkclasses"
+            android:label="@string/title_activity_drinkclasses" >
+        </activity>
     </application>
 
 </manifest>
