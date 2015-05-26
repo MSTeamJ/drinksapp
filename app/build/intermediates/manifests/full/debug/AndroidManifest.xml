@@ -65,6 +65,10 @@
             android:name="com.example.teeshirt.drinksapp.Drinkclasses"
             android:label="@string/title_activity_drinkclasses" >
         </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Drinktype"
+            android:label="@string/title_activity_drinktype" >
+        </activity>
     </application>
 
 </manifest>
