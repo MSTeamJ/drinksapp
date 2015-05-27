@@ -35,7 +35,7 @@ public class Beer extends ListActivity {
                         Object val = listView.getItemAtPosition(position);
                         Drink selected = (Drink)val;
                         String nom = selected.getName();
-                        //Toast.makeText(Beer.this, nom, Toast.LENGTH_SHORT).show();
+
                         Intent intent = new Intent(getApplicationContext(), Details.class);
                         intent.putExtra("drinkname", nom);
                         startActivity(intent);
