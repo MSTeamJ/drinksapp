@@ -7,17 +7,18 @@ import android.widget.TextView;
 
 import com.parse.ParseFile;
 import com.parse.ParseImageView;
-import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 
-
-public class CustomAdapter extends ParseQueryAdapter<Drink>{
-    public CustomAdapter(Context context){
+/**
+ * Created by teeshirt on 5/27/15.
+ */
+public class BrandyAdapter extends ParseQueryAdapter<Drink> {
+    public BrandyAdapter(Context context){
         super(context, new ParseQueryAdapter.QueryFactory<Drink>(){
             public ParseQuery<Drink> create(){
                 ParseQuery query = new ParseQuery("Drink");
-                query.whereEqualTo("category","Beer");
+                query.whereEqualTo("category","Brandy");
                 return query;
             }
         });
