@@ -1,5 +1,6 @@
 package com.example.teeshirt.drinksapp;
 
+import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
@@ -25,7 +26,7 @@ import java.util.List;
 import mehdi.sakout.fancybuttons.FancyButton;
 
 
-public class Latest extends ListActivity {
+public class Latest extends Activity {
 
     private ParseQueryAdapter<Drink> adapter;
 
@@ -34,12 +35,7 @@ public class Latest extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_latest);
 
-        adapter=new ParseQueryAdapter<Drink>(this, Drink.class);
-        adapter.setTextKey("name");
-        //adapter.setTextKey("category");
-        adapter.setImageKey("image");
 
-        setListAdapter(adapter);
 
 
         FancyButton all = (FancyButton)findViewById(R.id.all);

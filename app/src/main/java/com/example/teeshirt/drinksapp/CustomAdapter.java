@@ -12,27 +12,27 @@ import com.parse.ParseQuery;
 import com.parse.ParseQueryAdapter;
 
 
-public class CustomAdapter extends ParseQueryAdapter<ParseObject>{
+public class CustomAdapter extends ParseQueryAdapter<Drink>{
     public CustomAdapter(Context context){
-        super(context, new ParseQueryAdapter.QueryFactory<ParseObject>(){
-            public ParseQuery create(){
+        super(context, new ParseQueryAdapter.QueryFactory<Drink>(){
+            public ParseQuery<Drink> create(){
                 ParseQuery query = new ParseQuery("Drink");
-                query.whereEqualTo("category","beer");
+                query.whereEqualTo("category","Beer");
                 return query;
             }
         });
     }
 
     @Override
-    public View getItemView(ParseObject object, View v, ViewGroup parent) {
+    public View getItemView(Drink drink, View v, ViewGroup parent) {
         if (v==null){
             v = View.inflate(getContext(),R.layout.rowview,null);
         }
 
-        super.getItemView(object, v, parent);
+        super.getItemView(drink, v, parent);
 
-        ParseImageView icon = (ParseImageView) v.findViewById(R.id.icon);
-        ParseFile imageFile = object.getParseFile("image");
+        ParseImageView icon = (ParseImageView) v.findViewById(android.R.id.icon);
+        ParseFile imageFile = drink.getParseFile("image");
 
         if (imageFile!=null){
             icon.setParseFile(imageFile);
@@ -40,7 +40,7 @@ public class CustomAdapter extends ParseQueryAdapter<ParseObject>{
         }
 
         TextView text1 = (TextView) v.findViewById(R.id.text1);
-        text1.setText(object.getString("name"));
+        text1.setText(drink.getString("name"));
 
 
         return v;
