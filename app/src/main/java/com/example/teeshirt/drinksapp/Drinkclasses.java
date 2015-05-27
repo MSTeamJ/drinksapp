@@ -1,6 +1,7 @@
 package com.example.teeshirt.drinksapp;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -26,6 +27,8 @@ public class Drinkclasses extends ActionBarActivity {
         drinkslist = (ListView)findViewById(R.id.drinkslist);
         ListAdapter adapter = new ListAdapter(Drinkclasses.this, categories, icons);
         drinkslist.setAdapter(adapter);
+
+
 
         drinkslist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

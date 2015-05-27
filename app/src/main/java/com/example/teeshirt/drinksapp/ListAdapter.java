@@ -1,6 +1,7 @@
 package com.example.teeshirt.drinksapp;
 
 import android.app.Activity;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,9 +28,8 @@ public class ListAdapter extends ArrayAdapter<String> {
         View rowView = inflater.inflate(R.layout.list_item, null, true);
         TextView txt = (TextView)rowView.findViewById(R.id.txt);
         ImageView img = (ImageView)rowView.findViewById(R.id.img);
-/*Typeface font = Typeface.createFromAsset(context.getAssets(), "OpenSans.ttf");
-txt.setTypeface(font);
-*/
+        Typeface font = Typeface.createFromAsset(context.getAssets(), "raleway.ttf");
+        txt.setTypeface(font);
         txt.setText(categories[position]);
         img.setImageResource(icons[position]);
         return rowView;

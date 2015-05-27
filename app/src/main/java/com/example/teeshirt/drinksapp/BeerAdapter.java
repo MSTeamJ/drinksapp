@@ -1,6 +1,7 @@
 package com.example.teeshirt.drinksapp;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -42,6 +43,8 @@ public class BeerAdapter extends ParseQueryAdapter<Drink>{
         TextView text1 = (TextView) v.findViewById(R.id.text1);
         text1.setText(drink.getString("name"));
 
+        Typeface font = Typeface.createFromAsset(getContext().getAssets(), "raleway.ttf");
+        text1.setTypeface(font);
 
         return v;
     }

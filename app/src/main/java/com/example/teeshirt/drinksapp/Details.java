@@ -1,5 +1,6 @@
 package com.example.teeshirt.drinksapp;
 
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -38,7 +39,10 @@ public class Details extends ActionBarActivity {
         desc = (TextView)findViewById(R.id.desc);
         parseImageView = (ParseImageView)findViewById(R.id.pic);
 
-
+        Typeface font = Typeface.createFromAsset(getAssets(), "raleway.ttf");
+        desc.setTypeface(font);
+        nom.setTypeface(font);
+        price.setTypeface(font);
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Drink");
         query.whereEqualTo("name", drinkname);

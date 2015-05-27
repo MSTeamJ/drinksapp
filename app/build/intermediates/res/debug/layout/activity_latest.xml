@@ -1,29 +1,32 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:background="@drawable/martini"
-    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/brandysnifter"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     tools:context="com.example.teeshirt.drinksapp.Latest">
 
-    <ListView
-        android:layout_width="fill_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@android:id/list"></ListView>
+        android:id="@+id/dir"
+        android:text="Select a drink category to see the brands under it"
+        android:textSize="18dp"
+        android:paddingLeft="55dp"
+        android:paddingRight="50dp"
+        android:paddingTop="150dp"
+        android:textColor="#fff"
+        android:textAlignment="center"/>
 
-    <mehdi.sakout.fancybuttons.FancyButton
-        android:id="@+id/all"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        fancy:textSize="10dp"
-        fancy:borderColor="#fff"
-        fancy:borderWidth="2dp"
-        fancy:defaultColor="#001A1111"
-        fancy:focusColor="#ff9100"
-        fancy:radius="6dp"
-        fancy:text="SEE ALL"
-        fancy:textColor="#fff"
+    <at.markushi.ui.CircleButton
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:src="@drawable/arrow"
+        app:cb_color="#FF9100"
+        app:cb_pressedRingWidth="8dip"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"/>
+        android:layout_alignParentRight="true"
+        android:id="@+id/all"
+        />
 
 </RelativeLayout>
 <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/src/main/res/layout/activity_latest.xml -->
