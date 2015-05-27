@@ -259,6 +259,7 @@
     <string name="title_activity_beer">Beer</string>
     <string name="title_activity_brandy">Brandy</string>
     <string name="title_activity_categories">Categories</string>
+    <string name="title_activity_details">Details</string>
     <string name="title_activity_drinkclasses">Drinkclasses</string>
     <string name="title_activity_drinktype">Drinktype</string>
     <string name="title_activity_gin">Gin</string>

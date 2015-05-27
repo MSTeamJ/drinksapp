@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -23,12 +25,20 @@ public class Beer extends ListActivity {
         beerAdapter.setImageKey("image");
 
         setListAdapter(beerAdapter);
+
+        final ListView listView = (ListView)findViewById(android.R.id.list);
+        listView.setOnItemClickListener(
+                new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Object val = listView.getItemAtPosition(position);
+                        Drink selected = (Drink)val;
+                        Toast.makeText(Beer.this, selected.getName(), Toast.LENGTH_SHORT).show();
+                    }
+                }
+        );
     }
 
 
-    @Override
-    protected void onListItemClick(ListView l, View v, int position, long id) {
-        super.onListItemClick(l, v, position, id);
-    }
 }
 
