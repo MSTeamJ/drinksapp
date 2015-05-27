@@ -1,6 +1,7 @@
 package com.example.teeshirt.drinksapp;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -33,7 +34,11 @@ public class Beer extends ListActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                         Object val = listView.getItemAtPosition(position);
                         Drink selected = (Drink)val;
-                        Toast.makeText(Beer.this, selected.getName(), Toast.LENGTH_SHORT).show();
+                        String nom = selected.getName();
+                        //Toast.makeText(Beer.this, nom, Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), Details.class);
+                        intent.putExtra("drinkname", nom);
+                        startActivity(intent);
                     }
                 }
         );

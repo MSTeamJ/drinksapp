@@ -3,14 +3,15 @@
     android:layout_height="match_parent" android:background="#000"
     tools:context="com.example.teeshirt.drinksapp.Details">
 
-    <TextView android:text="drink x"
+    <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
+        android:textColor="#fff"
         android:layout_centerHorizontal="true"
         android:id="@+id/nom"/>
 
-    <ImageView
+    <com.parse.ParseImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/pic"/>
@@ -19,11 +20,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/pic"
+        android:textColor="#fff"
         android:id="@+id/price"/>
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:textColor="#fff"
         android:id="@+id/desc"
         android:layout_below="@+id/price"/>
 
