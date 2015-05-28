@@ -24,4 +24,6 @@
     <string name="title_activity_vodka">Vodka</string>
     <string name="title_activity_wine">Wine</string>
     <string name="title_activity_details">Details</string>
+    <string name="title_activity_navigate">Navigate</string>
+    <string name="title_activity_search">Search</string>
 </resources>

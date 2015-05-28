@@ -12,11 +12,13 @@
         android:src="@drawable/martini"/>-->
 
 
-    <!--<TextView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:text="DrinksApp"
-        android:textSize="40dp"/>-->
+        android:textSize="40dp"
+        android:textColor="#fff"
+        android:id="@+id/splashtext"/>
 </RelativeLayout>

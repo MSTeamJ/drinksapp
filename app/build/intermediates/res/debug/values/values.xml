@@ -267,7 +267,9 @@
     <string name="title_activity_liqueur">Liqueur</string>
     <string name="title_activity_login">Login</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_navigate">Navigate</string>
     <string name="title_activity_rum">Rum</string>
+    <string name="title_activity_search">Search</string>
     <string name="title_activity_splash">splash</string>
     <string name="title_activity_tequilla">Tequilla</string>
     <string name="title_activity_vodka">Vodka</string>

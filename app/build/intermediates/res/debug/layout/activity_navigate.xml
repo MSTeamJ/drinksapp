@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/partwhisky"
+    android:padding="15dp"
+    tools:context="com.example.teeshirt.drinksapp.Navigate">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Search by drink name"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:background="#ffc107"
+        android:id="@+id/search"
+        android:layout_marginTop="290dp"
+        android:layout_marginBottom="50dp"/>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Search by liquor type"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:background="#ffc107"
+        android:id="@+id/type"
+        android:layout_below="@id/search"
+        android:layout_marginBottom="10dp"/>
+
+
+</RelativeLayout>
+<!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/src/main/res/layout/activity_navigate.xml -->

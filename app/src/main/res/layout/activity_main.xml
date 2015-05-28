@@ -26,11 +26,12 @@
 
     <Button
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
         android:text="NEXT"
         android:textSize="20dp"
         android:textColor="#000"
-        android:src="@drawable/arrow"
+        android:drawableRight="@drawable/arrow"
         android:background="#ffc107"
         android:layout_alignParentBottom="true"
         android:id="@+id/cb"

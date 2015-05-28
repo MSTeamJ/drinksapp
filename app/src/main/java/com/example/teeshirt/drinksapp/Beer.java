@@ -1,25 +1,30 @@
 package com.example.teeshirt.drinksapp;
 
+import android.app.ActionBar;
 import android.app.ListActivity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+
+
 
 
 public class Beer extends ListActivity {
 
     private BeerAdapter beerAdapter;
 
-
+    private ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beer);
+
+
 
         beerAdapter = new BeerAdapter(this);
         beerAdapter.setTextKey("name");

@@ -47,7 +47,7 @@ public class Latest extends Activity {
         all.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Latest.this, Drinkclasses.class);
+                Intent i = new Intent(Latest.this, Navigate.class);
                 startActivity(i);
             }
         });

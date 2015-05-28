@@ -54,10 +54,6 @@
             android:label="@string/title_activity_latest" >
         </activity>
         <activity
-            android:name="com.example.teeshirt.drinksapp.Categories"
-            android:label="@string/title_activity_categories" >
-        </activity>
-        <activity
             android:name="com.example.teeshirt.drinksapp.Whiskey"
             android:label="@string/title_activity_whiskey" >
         </activity>
@@ -65,10 +61,6 @@
             android:name="com.example.teeshirt.drinksapp.Drinkclasses"
             android:label="@string/title_activity_drinkclasses"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
-        </activity>
-        <activity
-            android:name="com.example.teeshirt.drinksapp.Drinktype"
-            android:label="@string/title_activity_drinktype" >
         </activity>
         <activity
             android:name="com.example.teeshirt.drinksapp.Beer"
@@ -106,6 +98,14 @@
             android:name="com.example.teeshirt.drinksapp.Details"
             android:label="@string/title_activity_details"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Navigate"
+            android:label="@string/title_activity_navigate" >
+        </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Search"
+            android:label="@string/title_activity_search" >
         </activity>
     </application>
 

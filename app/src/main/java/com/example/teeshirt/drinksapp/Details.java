@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,8 +26,9 @@ import java.util.List;
 public class Details extends ActionBarActivity {
     public Bundle namebundle;
     private String drinkname;
-    private TextView nom, price, desc, pricelabel;
+    private TextView nom, price, desc, pricelabel,rater;
     private ParseImageView parseImageView;
+    private RatingBar rating;
 
 
     @Override
@@ -49,12 +51,13 @@ public class Details extends ActionBarActivity {
         price = (TextView)findViewById(R.id.price);
         desc = (TextView)findViewById(R.id.desc);
         pricelabel = (TextView)findViewById(R.id.pricelabel);
+        rater = (TextView)findViewById(R.id.rater);
 
         parseImageView = (ParseImageView)findViewById(R.id.pic);
 
         Typeface font = Typeface.createFromAsset(getAssets(), "raleway.ttf");
         desc.setTypeface(font);
-        //nom.setTypeface(font);
+        rater.setTypeface(font);
         price.setTypeface(font);
         pricelabel.setTypeface(font);
 
@@ -82,8 +85,27 @@ public class Details extends ActionBarActivity {
             }
         });
 
+        ratingBarListener();
+
+    }
 
 
+    public void ratingBarListener(){
+        rating = (RatingBar)findViewById(R.id.rating);
+        //txt = (TextView)findViewById(R.id.txt);
+
+        rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            @Override
+            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+                Toast.makeText(Details.this, "You've rated " + drinkname +" " +String.valueOf(rating), Toast.LENGTH_LONG).show();
+                disabled();
+            }
+        });
+    }
+
+    public void disabled(){
+        rating.setClickable(false);
+        rating.setVisibility(RatingBar.GONE);
     }
 
 

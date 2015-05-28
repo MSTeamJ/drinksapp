@@ -48,21 +48,13 @@
             android:label="@string/title_activity_latest" >
         </activity>
         <activity
-            android:name=".Categories"
-            android:label="@string/title_activity_categories" >
-        </activity>
-        <activity
             android:name=".Whiskey"
             android:label="@string/title_activity_whiskey" >
         </activity>
         <activity
             android:name=".Drinkclasses"
             android:label="@string/title_activity_drinkclasses"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        </activity>
-        <activity
-            android:name=".Drinktype"
-            android:label="@string/title_activity_drinktype" >
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
         </activity>
         <activity
             android:name=".Beer"
@@ -99,7 +91,15 @@
         <activity
             android:name=".Details"
             android:label="@string/title_activity_details"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        </activity>
+        <activity
+            android:name=".Navigate"
+            android:label="@string/title_activity_navigate" >
+        </activity>
+        <activity
+            android:name=".Search"
+            android:label="@string/title_activity_search" >
         </activity>
     </application>
 
