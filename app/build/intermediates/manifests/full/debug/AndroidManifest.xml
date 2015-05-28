@@ -107,6 +107,10 @@
             android:name="com.example.teeshirt.drinksapp.Search"
             android:label="@string/title_activity_search" >
         </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Result"
+            android:label="@string/title_activity_result" >
+        </activity>
     </application>
 
 </manifest>

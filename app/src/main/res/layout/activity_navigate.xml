@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/partwhisky"
+    android:background="@drawable/beer2"
     android:padding="15dp"
     tools:context="com.example.teeshirt.drinksapp.Navigate">
 
@@ -14,7 +14,7 @@
         android:textColor="#000"
         android:background="#ffc107"
         android:id="@+id/search"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="200dp"
         android:layout_marginBottom="50dp"/>
 
 
