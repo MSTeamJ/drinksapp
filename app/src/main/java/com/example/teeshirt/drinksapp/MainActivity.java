@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.parse.Parse;
@@ -26,7 +27,7 @@ public class MainActivity extends ActionBarActivity {
         Typeface font = Typeface.createFromAsset(getAssets(), "raleway.ttf");
         textView.setTypeface(font);
 
-        CircleButton cb = (CircleButton)findViewById(R.id.cb);
+        Button cb = (Button)findViewById(R.id.cb);
         cb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

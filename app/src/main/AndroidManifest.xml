@@ -97,7 +97,8 @@
         </activity>
         <activity
             android:name=".Details"
-            android:label="@string/title_activity_details" >
+            android:label="@string/title_activity_details"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         </activity>
     </application>
 

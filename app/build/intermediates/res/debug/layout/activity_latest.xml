@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dir"
-        android:text="Select a drink category to see the brands under it"
+        android:text="Select a drink category to see the brands under it."
         android:textSize="18dp"
         android:paddingLeft="55dp"
         android:paddingRight="50dp"
@@ -17,16 +17,26 @@
         android:textColor="#fff"
         android:textAlignment="center"/>
 
-    <at.markushi.ui.CircleButton
+    <!--<at.markushi.ui.CircleButton
         android:layout_width="64dip"
         android:layout_height="64dip"
         android:src="@drawable/arrow"
-        app:cb_color="#FF9100"
+        app:cb_color="#FFc107"
         app:cb_pressedRingWidth="8dip"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:id="@+id/all"
-        />
+        />-->
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="OK. GOT IT"
+        android:textSize="25dp"
+        android:src="@drawable/arrow"
+        android:background="#ffc107"
+        android:id="@+id/all"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
 <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/src/main/res/layout/activity_latest.xml -->

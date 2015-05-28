@@ -171,6 +171,8 @@ activity#com.example.teeshirt.drinksapp.Details
 ADDED from AndroidManifest.xml:98:9
 	android:label
 		ADDED from AndroidManifest.xml:100:13
+	android:theme
+		ADDED from AndroidManifest.xml:101:13
 	android:name
 		ADDED from AndroidManifest.xml:99:13
 uses-sdk

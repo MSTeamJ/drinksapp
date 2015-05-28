@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -43,7 +44,7 @@ public class Latest extends Activity {
         dir.setTypeface(font);
 
 
-        CircleButton all = (CircleButton)findViewById(R.id.all);
+        Button all = (Button)findViewById(R.id.all);
         all.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
