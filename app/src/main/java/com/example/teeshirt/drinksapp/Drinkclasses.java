@@ -1,9 +1,13 @@
 package com.example.teeshirt.drinksapp;
 
+import android.app.ActionBar;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +17,7 @@ import android.widget.Switch;
 
 
 public class Drinkclasses extends ActionBarActivity {
+    ActionBar actionBar;
     ListView drinkslist;
     String[] categories = {"Beer","Brandy","Gin","Liqueur","Rum","Tequilla","Vodka","Whiskey","Wine"};
     Integer[] icons = {R.drawable.beer, R.drawable.brandy, R.drawable.gin, R.drawable.liqueur, R.drawable.rum, R.drawable.tequilla,R.drawable.vodka, R.drawable.whiskey, R.drawable.wine};
@@ -28,7 +33,9 @@ public class Drinkclasses extends ActionBarActivity {
         ListAdapter adapter = new ListAdapter(Drinkclasses.this, categories, icons);
         drinkslist.setAdapter(adapter);
 
-
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
+        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Categories" + "</font>"));
+        getSupportActionBar().setElevation(1);
 
         drinkslist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

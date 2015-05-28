@@ -24,8 +24,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         TextView textView = (TextView) findViewById(R.id.textView);
-        Typeface font = Typeface.createFromAsset(getAssets(), "raleway.ttf");
-        textView.setTypeface(font);
+
 
         Button cb = (Button)findViewById(R.id.cb);
         cb.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +34,10 @@ public class MainActivity extends ActionBarActivity {
                 startActivity(intent);
             }
         });
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "raleway.ttf");
+        textView.setTypeface(font);
+        cb.setTypeface(font);
     }
 
 

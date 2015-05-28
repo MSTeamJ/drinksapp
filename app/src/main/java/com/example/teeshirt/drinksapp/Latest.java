@@ -40,8 +40,7 @@ public class Latest extends Activity {
         setContentView(R.layout.activity_latest);
 
         TextView dir = (TextView) findViewById(R.id.dir);
-        Typeface font = Typeface.createFromAsset(getAssets(), "raleway.ttf");
-        dir.setTypeface(font);
+
 
 
         Button all = (Button)findViewById(R.id.all);
@@ -53,6 +52,10 @@ public class Latest extends Activity {
             }
         });
 
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "raleway.ttf");
+        dir.setTypeface(font);
+        all.setTypeface(font);
 
     }
 

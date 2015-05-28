@@ -6,6 +6,7 @@ import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -33,7 +34,7 @@ public class Details extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
+
 
 
         namebundle = getIntent().getExtras();
@@ -41,7 +42,9 @@ public class Details extends ActionBarActivity {
             drinkname = namebundle.getString("drinkname");
         }
 
-        getSupportActionBar().setTitle(drinkname);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
+        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + drinkname + "</font>"));
+        getSupportActionBar().setElevation(1);
         //nom = (TextView)findViewById(R.id.nom);
         price = (TextView)findViewById(R.id.price);
         desc = (TextView)findViewById(R.id.desc);

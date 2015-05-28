@@ -8,10 +8,13 @@
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/drinkslist"></ListView>
+        android:id="@+id/drinkslist"
+        android:divider="#757575"
+        android:dividerHeight="0.5px"
+        ></ListView>
 
 
-
+    <!--android:dividerHeight="1px"-->
 
 
 

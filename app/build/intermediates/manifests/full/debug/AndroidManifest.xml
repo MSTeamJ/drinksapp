@@ -63,7 +63,8 @@
         </activity>
         <activity
             android:name="com.example.teeshirt.drinksapp.Drinkclasses"
-            android:label="@string/title_activity_drinkclasses" >
+            android:label="@string/title_activity_drinkclasses"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
         </activity>
         <activity
             android:name="com.example.teeshirt.drinksapp.Drinktype"
