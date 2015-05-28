@@ -1,5 +1,6 @@
 package com.example.teeshirt.drinksapp;
 
+import android.app.ListActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,10 +8,10 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 
-public class Result extends ActionBarActivity {
+public class Result extends ListActivity {
     public Bundle st;
-    private String searchTerm;
-
+    static String searchTerm;
+    private ResultAdapter resultAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +21,13 @@ public class Result extends ActionBarActivity {
         if (st!=null) {
             searchTerm = st.getString("term");
         }
-        Toast.makeText(Result.this, searchTerm, Toast.LENGTH_SHORT).show();
+
+
+        resultAdapter = new ResultAdapter(this);
+        resultAdapter.setTextKey("name");
+        resultAdapter.setImageKey("image");
+
+        setListAdapter(resultAdapter);
     }
 
     @Override
