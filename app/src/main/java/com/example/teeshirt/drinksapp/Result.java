@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class Result extends ListActivity {
     public Bundle st;
-    static String searchTerm;
+    public static String searchTerm;
     private ResultAdapter resultAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

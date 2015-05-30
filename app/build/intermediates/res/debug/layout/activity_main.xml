@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Check out what other people are saying about your favorite drink."
+        android:text="Discover new drinks, Check out what other people are saying about your favorite drink."
         android:layout_marginTop="60dp"
         android:textSize="18dp"
         android:padding="5dp"

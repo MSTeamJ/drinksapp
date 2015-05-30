@@ -9,7 +9,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dir"
-        android:text="Select a drink category to see the brands under it."
+        android:text="Select a drink category to see the brands under it or search for it by name."
         android:textSize="18dp"
         android:paddingLeft="55dp"
         android:paddingRight="50dp"
