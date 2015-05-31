@@ -111,6 +111,10 @@
             android:name="com.example.teeshirt.drinksapp.Result"
             android:label="@string/title_activity_result" >
         </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Talk"
+            android:label="@string/title_activity_talk" >
+        </activity>
     </application>
 
 </manifest>

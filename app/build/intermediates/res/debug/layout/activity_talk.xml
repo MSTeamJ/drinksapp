@@ -61,3 +61,4 @@
         android:id="@+id/tasteBtn"
         android:layout_below="@+id/tasteGroup"/>
 </RelativeLayout>
+<!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/src/main/res/layout/activity_talk.xml -->
