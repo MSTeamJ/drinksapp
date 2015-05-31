@@ -105,6 +105,10 @@
             android:name=".Result"
             android:label="@string/title_activity_result" >
         </activity>
+        <activity
+            android:name=".Talk"
+            android:label="@string/title_activity_talk" >
+        </activity>
     </application>
 
 </manifest>
