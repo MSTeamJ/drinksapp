@@ -41,6 +41,7 @@ public class Talk extends ActionBarActivity {
                         String taste = radio.getText().toString();
                         Intent intent = new Intent(Talk.this,Aroma.class);
                         intent.putExtra("taste",taste);
+                        startActivity(intent);
                     }
                 }
         );

@@ -115,6 +115,10 @@
             android:name="com.example.teeshirt.drinksapp.Talk"
             android:label="@string/title_activity_talk" >
         </activity>
+        <activity
+            android:name="com.example.teeshirt.drinksapp.Aroma"
+            android:label="@string/title_activity_aroma" >
+        </activity>
     </application>
 
 </manifest>

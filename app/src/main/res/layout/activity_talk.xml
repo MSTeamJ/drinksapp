@@ -33,12 +33,7 @@
             android:id="@+id/spicy"
             android:text="Spicy"
             android:textSize="18dp"/>
-        <RadioButton
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/woody"
-            android:text="Woody"
-            android:textSize="18dp"/>
+
 
         <RadioButton
             android:layout_width="fill_parent"

@@ -4,14 +4,28 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 
 public class Aroma extends ActionBarActivity {
+    private RadioGroup aromaGroup;
+    private RadioButton radio, floral, citrus, woody, malty;
+    public Bundle taste;
+    public String drinkTaste;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_aroma);
+
+        taste = getIntent().getExtras();
+        if (taste!=null){
+            drinkTaste = taste.getString("taste");
+            Toast.makeText(Aroma.this, drinkTaste, Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     @Override

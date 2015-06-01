@@ -256,6 +256,7 @@
     <string name="messenger_send_button_text">Send</string>
     <!-- From: file:/home/teeshirt/AndroidStudioProjects/DrinksApp/app/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="title_activity_aroma">Aroma</string>
     <string name="title_activity_beer">Beer</string>
     <string name="title_activity_brandy">Brandy</string>
     <string name="title_activity_categories">Categories</string>
