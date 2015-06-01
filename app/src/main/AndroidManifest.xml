@@ -109,6 +109,10 @@
             android:name=".Talk"
             android:label="@string/title_activity_talk" >
         </activity>
+        <activity
+            android:name=".Aroma"
+            android:label="@string/title_activity_aroma" >
+        </activity>
     </application>
 
 </manifest>

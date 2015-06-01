@@ -1,5 +1,6 @@
 package com.example.teeshirt.drinksapp;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -37,7 +38,9 @@ public class Talk extends ActionBarActivity {
                     public void onClick(View v) {
                         int selected = tasteGroup.getCheckedRadioButtonId();
                         radio = (RadioButton) findViewById(selected);
-                        Toast.makeText(getApplicationContext(), radio.getText().toString(),Toast.LENGTH_LONG).show();
+                        String taste = radio.getText().toString();
+                        Intent intent = new Intent(Talk.this,Aroma.class);
+                        intent.putExtra("taste",taste);
                     }
                 }
         );
