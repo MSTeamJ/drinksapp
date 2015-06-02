@@ -52,4 +52,17 @@
 
     </RadioGroup>
 
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Next"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:background="#ffc107"
+        android:id="@+id/aromaBtn"
+        android:padding="20dp"
+        android:layout_below="@+id/aromaGroup"/>
+
+
 </RelativeLayout>
