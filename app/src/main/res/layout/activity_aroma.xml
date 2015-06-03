@@ -32,7 +32,7 @@
     <RadioButton
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/floaral"
+        android:id="@+id/floral"
         android:text="Floral"
         android:textSize="18dp"/>
     <RadioButton
