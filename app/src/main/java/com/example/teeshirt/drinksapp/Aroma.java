@@ -13,7 +13,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class Aroma extends ActionBarActivity {
+public class
+        Aroma extends ActionBarActivity {
     private RadioGroup aromaGroup;
     private RadioButton radio, floral, citrus, woody, malty;
     public Bundle taste;

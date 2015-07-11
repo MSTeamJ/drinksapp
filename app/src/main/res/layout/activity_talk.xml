@@ -56,5 +56,7 @@
         android:background="#ffc107"
         android:id="@+id/tasteBtn"
         android:padding="20dp"
-        android:layout_below="@+id/tasteGroup"/>
+        android:layout_below="@+id/tasteGroup"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 </RelativeLayout>
