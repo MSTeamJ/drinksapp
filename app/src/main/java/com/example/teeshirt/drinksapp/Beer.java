@@ -1,6 +1,7 @@
 package com.example.teeshirt.drinksapp;
 
 import android.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.graphics.Color;
@@ -25,6 +26,9 @@ public class Beer extends ListActivity {
         setContentView(R.layout.activity_beer);
 
 
+        /*getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
+        actionBar.setTitle(Html.fromHtml("<font color=\"black\">" + "Categories" + "</font>"));
+        *///actionBar.setElevation(1);
 
         beerAdapter = new BeerAdapter(this);
         beerAdapter.setTextKey("name");

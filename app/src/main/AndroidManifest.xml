@@ -54,7 +54,7 @@
         <activity
             android:name=".Drinkclasses"
             android:label="@string/title_activity_drinkclasses"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar" >
         </activity>
         <activity
             android:name=".Beer"

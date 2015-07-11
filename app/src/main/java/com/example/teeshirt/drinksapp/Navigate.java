@@ -11,7 +11,7 @@ import android.widget.Button;
 
 
 public class Navigate extends ActionBarActivity {
-    private Button search, type, talk;
+    private Button search, type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,12 +20,12 @@ public class Navigate extends ActionBarActivity {
 
         search = (Button)findViewById(R.id.search);
         type = (Button) findViewById(R.id.type);
-        talk = (Button) findViewById(R.id.talk);
+
 
         Typeface font = Typeface.createFromAsset(getAssets(), "raleway.ttf");
         search.setTypeface(font);
         type.setTypeface(font);
-        talk.setTypeface(font);
+
 
         type.setOnClickListener(
                 new View.OnClickListener() {
@@ -48,15 +48,7 @@ public class Navigate extends ActionBarActivity {
         );
 
 
-        talk.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Navigate.this, Talk.class);
-                        startActivity(intent);
-                    }
-                }
-        );
+
 
     }
 
