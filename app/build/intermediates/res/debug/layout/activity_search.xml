@@ -20,7 +20,7 @@
         android:text="Search"
         android:textSize="20dp"
         android:textColor="#000"
-        android:background="#ffc107"
+        android:background="@drawable/btn_rounded"
         android:id="@+id/btnSearch"
         android:layout_below="@id/etSearch"
         android:layout_marginBottom="10dp"
