@@ -1,6 +1,7 @@
 package com.example.teeshirt.drinksapp;
 
 import android.app.ActionBar;
+import android.app.Activity;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -23,7 +24,7 @@ import com.parse.ParseQuery;
 import java.util.List;
 
 
-public class Details extends ActionBarActivity {
+public class Details extends Activity {
     public Bundle namebundle;
     private String drinkname;
     private TextView nom, price, desc, pricelabel,rater;
@@ -44,9 +45,9 @@ public class Details extends ActionBarActivity {
             drinkname = namebundle.getString("drinkname");
         }
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
-        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + drinkname + "</font>"));
-        getSupportActionBar().setElevation(1);
+        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
+        getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + drinkname + "</font>"));
+        //getSupportActionBar().setElevation(1);
         //nom = (TextView)findViewById(R.id.nom);
         price = (TextView)findViewById(R.id.price);
         desc = (TextView)findViewById(R.id.desc);

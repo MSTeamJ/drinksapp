@@ -49,7 +49,8 @@
         </activity>
         <activity
             android:name=".Whiskey"
-            android:label="@string/title_activity_whiskey" >
+            android:label="@string/title_activity_whiskey"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Drinkclasses"
@@ -91,6 +92,7 @@
             android:label="@string/title_activity_vodka"
             android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
+
         <activity
             android:name=".Wine"
             android:label="@string/title_activity_wine"

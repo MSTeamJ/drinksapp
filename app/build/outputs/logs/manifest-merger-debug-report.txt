@@ -99,106 +99,108 @@ activity#com.example.teeshirt.drinksapp.Whiskey
 ADDED from AndroidManifest.xml:50:9
 	android:label
 		ADDED from AndroidManifest.xml:52:13
+	android:theme
+		ADDED from AndroidManifest.xml:53:13
 	android:name
 		ADDED from AndroidManifest.xml:51:13
 activity#com.example.teeshirt.drinksapp.Drinkclasses
-ADDED from AndroidManifest.xml:54:9
+ADDED from AndroidManifest.xml:55:9
 	android:label
-		ADDED from AndroidManifest.xml:56:13
-	android:theme
 		ADDED from AndroidManifest.xml:57:13
+	android:theme
+		ADDED from AndroidManifest.xml:58:13
 	android:name
-		ADDED from AndroidManifest.xml:55:13
+		ADDED from AndroidManifest.xml:56:13
 activity#com.example.teeshirt.drinksapp.Beer
-ADDED from AndroidManifest.xml:59:9
+ADDED from AndroidManifest.xml:60:9
 	android:label
-		ADDED from AndroidManifest.xml:61:13
-	android:theme
 		ADDED from AndroidManifest.xml:62:13
+	android:theme
+		ADDED from AndroidManifest.xml:63:13
 	android:name
-		ADDED from AndroidManifest.xml:60:13
+		ADDED from AndroidManifest.xml:61:13
 activity#com.example.teeshirt.drinksapp.Brandy
-ADDED from AndroidManifest.xml:64:9
+ADDED from AndroidManifest.xml:65:9
 	android:label
-		ADDED from AndroidManifest.xml:66:13
-	android:theme
 		ADDED from AndroidManifest.xml:67:13
+	android:theme
+		ADDED from AndroidManifest.xml:68:13
 	android:name
-		ADDED from AndroidManifest.xml:65:13
+		ADDED from AndroidManifest.xml:66:13
 activity#com.example.teeshirt.drinksapp.Gin
-ADDED from AndroidManifest.xml:69:9
+ADDED from AndroidManifest.xml:70:9
 	android:label
-		ADDED from AndroidManifest.xml:71:13
-	android:theme
 		ADDED from AndroidManifest.xml:72:13
+	android:theme
+		ADDED from AndroidManifest.xml:73:13
 	android:name
-		ADDED from AndroidManifest.xml:70:13
+		ADDED from AndroidManifest.xml:71:13
 activity#com.example.teeshirt.drinksapp.Liqueur
-ADDED from AndroidManifest.xml:74:9
+ADDED from AndroidManifest.xml:75:9
 	android:label
-		ADDED from AndroidManifest.xml:76:13
-	android:theme
 		ADDED from AndroidManifest.xml:77:13
+	android:theme
+		ADDED from AndroidManifest.xml:78:13
 	android:name
-		ADDED from AndroidManifest.xml:75:13
+		ADDED from AndroidManifest.xml:76:13
 activity#com.example.teeshirt.drinksapp.Rum
-ADDED from AndroidManifest.xml:79:9
+ADDED from AndroidManifest.xml:80:9
 	android:label
-		ADDED from AndroidManifest.xml:81:13
-	android:theme
 		ADDED from AndroidManifest.xml:82:13
+	android:theme
+		ADDED from AndroidManifest.xml:83:13
 	android:name
-		ADDED from AndroidManifest.xml:80:13
+		ADDED from AndroidManifest.xml:81:13
 activity#com.example.teeshirt.drinksapp.Tequilla
-ADDED from AndroidManifest.xml:84:9
+ADDED from AndroidManifest.xml:85:9
 	android:label
-		ADDED from AndroidManifest.xml:86:13
-	android:theme
 		ADDED from AndroidManifest.xml:87:13
+	android:theme
+		ADDED from AndroidManifest.xml:88:13
 	android:name
-		ADDED from AndroidManifest.xml:85:13
+		ADDED from AndroidManifest.xml:86:13
 activity#com.example.teeshirt.drinksapp.Vodka
-ADDED from AndroidManifest.xml:89:9
+ADDED from AndroidManifest.xml:90:9
 	android:label
-		ADDED from AndroidManifest.xml:91:13
-	android:theme
 		ADDED from AndroidManifest.xml:92:13
+	android:theme
+		ADDED from AndroidManifest.xml:93:13
 	android:name
-		ADDED from AndroidManifest.xml:90:13
+		ADDED from AndroidManifest.xml:91:13
 activity#com.example.teeshirt.drinksapp.Wine
-ADDED from AndroidManifest.xml:94:9
+ADDED from AndroidManifest.xml:96:9
 	android:label
-		ADDED from AndroidManifest.xml:96:13
+		ADDED from AndroidManifest.xml:98:13
 	android:theme
+		ADDED from AndroidManifest.xml:99:13
+	android:name
 		ADDED from AndroidManifest.xml:97:13
-	android:name
-		ADDED from AndroidManifest.xml:95:13
 activity#com.example.teeshirt.drinksapp.Details
-ADDED from AndroidManifest.xml:99:9
+ADDED from AndroidManifest.xml:101:9
 	android:label
-		ADDED from AndroidManifest.xml:101:13
+		ADDED from AndroidManifest.xml:103:13
 	android:theme
+		ADDED from AndroidManifest.xml:104:13
+	android:name
 		ADDED from AndroidManifest.xml:102:13
-	android:name
-		ADDED from AndroidManifest.xml:100:13
 activity#com.example.teeshirt.drinksapp.Navigate
-ADDED from AndroidManifest.xml:104:9
+ADDED from AndroidManifest.xml:106:9
 	android:label
-		ADDED from AndroidManifest.xml:106:13
+		ADDED from AndroidManifest.xml:108:13
 	android:name
-		ADDED from AndroidManifest.xml:105:13
+		ADDED from AndroidManifest.xml:107:13
 activity#com.example.teeshirt.drinksapp.Search
-ADDED from AndroidManifest.xml:108:9
+ADDED from AndroidManifest.xml:110:9
 	android:label
-		ADDED from AndroidManifest.xml:110:13
+		ADDED from AndroidManifest.xml:112:13
 	android:name
-		ADDED from AndroidManifest.xml:109:13
+		ADDED from AndroidManifest.xml:111:13
 activity#com.example.teeshirt.drinksapp.Result
-ADDED from AndroidManifest.xml:112:9
+ADDED from AndroidManifest.xml:114:9
 	android:label
-		ADDED from AndroidManifest.xml:114:13
+		ADDED from AndroidManifest.xml:116:13
 	android:name
-		ADDED from AndroidManifest.xml:113:13
+		ADDED from AndroidManifest.xml:115:13
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
 MERGED from com.android.support:appcompat-v7:22.0.0:20:5

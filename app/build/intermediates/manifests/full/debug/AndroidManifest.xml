@@ -55,7 +55,8 @@
         </activity>
         <activity
             android:name="com.example.teeshirt.drinksapp.Whiskey"
-            android:label="@string/title_activity_whiskey" >
+            android:label="@string/title_activity_whiskey"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar" >
         </activity>
         <activity
             android:name="com.example.teeshirt.drinksapp.Drinkclasses"

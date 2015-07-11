@@ -7,7 +7,9 @@
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@android:id/list"></ListView>
+        android:id="@android:id/list"
+        android:divider="#757575"
+        android:dividerHeight="0.5px"></ListView>
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/owuor/Documents/Android/drinksapp/app/src/main/res/layout/activity_whiskey.xml -->
