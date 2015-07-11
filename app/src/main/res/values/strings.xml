@@ -3,7 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_splash">splash</string>
+    <string name="title_activity_splash">DrinksApp</string>
     <string name="title_activity_login">Login</string>
     <string name="app_id">1821399464751972</string>
     <string name="title_activity_main">MainActivity</string>

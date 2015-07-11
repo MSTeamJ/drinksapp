@@ -32,10 +32,14 @@
         android:textSize="20dp"
         android:textColor="#000"
         android:drawableRight="@drawable/arrow"
-        android:background="#ffc107"
+        android:background="@drawable/btn_rounded"
         android:layout_alignParentBottom="true"
         android:id="@+id/cb"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
 </RelativeLayout>
 
 
