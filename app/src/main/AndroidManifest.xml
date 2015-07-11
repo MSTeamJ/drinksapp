@@ -58,40 +58,48 @@
         </activity>
         <activity
             android:name=".Beer"
-            android:label="@string/title_activity_beer" >
+            android:label="@string/title_activity_beer"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Brandy"
-            android:label="@string/title_activity_brandy" >
+            android:label="@string/title_activity_brandy"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Gin"
-            android:label="@string/title_activity_gin" >
+            android:label="@string/title_activity_gin"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Liqueur"
-            android:label="@string/title_activity_liqueur" >
+            android:label="@string/title_activity_liqueur"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Rum"
-            android:label="@string/title_activity_rum" >
+            android:label="@string/title_activity_rum"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Tequilla"
-            android:label="@string/title_activity_tequilla" >
+            android:label="@string/title_activity_tequilla"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Vodka"
-            android:label="@string/title_activity_vodka" >
+            android:label="@string/title_activity_vodka"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Wine"
-            android:label="@string/title_activity_wine" >
+            android:label="@string/title_activity_wine"
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Details"
             android:label="@string/title_activity_details"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+            android:theme="@style/android:Theme.Holo.Light.DarkActionBar">
         </activity>
         <activity
             android:name=".Navigate"
@@ -105,14 +113,7 @@
             android:name=".Result"
             android:label="@string/title_activity_result" >
         </activity>
-        <activity
-            android:name=".Talk"
-            android:label="@string/title_activity_talk" >
-        </activity>
-        <activity
-            android:name=".Aroma"
-            android:label="@string/title_activity_aroma" >
-        </activity>
+
     </application>
 
 </manifest>

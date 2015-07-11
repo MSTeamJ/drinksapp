@@ -2,8 +2,11 @@ package com.example.teeshirt.drinksapp;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,6 +24,10 @@ public class Gin extends ListActivity {
         ginAdapter = new GinAdapter(this);
         ginAdapter.setImageKey("image");
         ginAdapter.setTextKey("name");
+
+        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
+        getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Gin" + "</font>"));
+        getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
 
         setListAdapter(ginAdapter);
 

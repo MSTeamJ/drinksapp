@@ -25,10 +25,10 @@ public class Beer extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beer);
 
+        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
+        getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Beer" + "</font>"));
+        getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
 
-        /*getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
-        actionBar.setTitle(Html.fromHtml("<font color=\"black\">" + "Categories" + "</font>"));
-        *///actionBar.setElevation(1);
 
         beerAdapter = new BeerAdapter(this);
         beerAdapter.setTextKey("name");
