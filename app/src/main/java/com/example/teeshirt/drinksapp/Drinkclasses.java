@@ -33,10 +33,12 @@ public class Drinkclasses extends Activity {
         drinkslist = (ListView)findViewById(R.id.drinkslist);
         ListAdapter adapter = new ListAdapter(Drinkclasses.this, categories, icons);
         drinkslist.setAdapter(adapter);
-        
-        actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
-        actionBar.setTitle(Html.fromHtml("<font color=\"black\">" + "Categories" + "</font>"));
-        actionBar.setElevation(1);
+
+        getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
+        getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Categories" + "</font>"));
+        getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+
+
 
         drinkslist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
