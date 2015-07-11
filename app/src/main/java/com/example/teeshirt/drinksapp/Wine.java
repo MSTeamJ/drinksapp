@@ -29,6 +29,7 @@ public class Wine extends ListActivity {
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
         getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Wine" + "</font>"));
         getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         setListAdapter(wineAdapter);
@@ -50,5 +51,15 @@ public class Wine extends ListActivity {
         );
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 }

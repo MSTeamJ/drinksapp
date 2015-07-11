@@ -29,6 +29,7 @@ public class Liqueur extends ListActivity {
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
         getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Liqueur" + "</font>"));
         getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         setListAdapter(liqueurAdapter);
 
@@ -49,5 +50,16 @@ public class Liqueur extends ListActivity {
         );
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 
 }

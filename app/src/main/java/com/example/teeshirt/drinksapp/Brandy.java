@@ -29,6 +29,7 @@ public class Brandy extends ListActivity {
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
         getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Brandy" + "</font>"));
         getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         setListAdapter(brandyAdapter);
 
@@ -48,6 +49,17 @@ public class Brandy extends ListActivity {
                 }
         );
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 

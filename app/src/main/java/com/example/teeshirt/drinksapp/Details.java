@@ -47,6 +47,8 @@ public class Details extends Activity {
 
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
         getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + drinkname + "</font>"));
+        getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         //getSupportActionBar().setElevation(1);
         //nom = (TextView)findViewById(R.id.nom);
         price = (TextView)findViewById(R.id.price);
@@ -107,6 +109,18 @@ public class Details extends Activity {
     public void disabled(){
         rating.setClickable(false);
         rating.setVisibility(RatingBar.GONE);
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
 

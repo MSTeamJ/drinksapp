@@ -1,6 +1,7 @@
 package com.example.teeshirt.drinksapp;
 
 import android.app.ActionBar;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.app.ListActivity;
 import android.content.Intent;
@@ -8,6 +9,7 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.text.Html;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -28,6 +30,7 @@ public class Beer extends ListActivity {
         getActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffc107")));
         getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Beer" + "</font>"));
         getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
 
         beerAdapter = new BeerAdapter(this);
@@ -53,6 +56,15 @@ public class Beer extends ListActivity {
         );
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }
 
