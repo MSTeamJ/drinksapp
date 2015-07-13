@@ -504,6 +504,7 @@ int id com_facebook_login_activity_progress_bar 0x7f090067
 int id com_facebook_tooltip_bubble_view_bottom_pointer 0x7f09006c
 int id com_facebook_tooltip_bubble_view_text_body 0x7f09006b
 int id com_facebook_tooltip_bubble_view_top_pointer 0x7f090069
+int id comment 0x7f090074
 int id container 0x7f09005e
 int id decor_content_parent 0x7f090045
 int id default_activity_button 0x7f09003a

@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beer2"
+    android:padding="15dp"
+    tools:context="com.example.teeshirt.drinksapp.Navigate">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Search by drink name"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:background="@drawable/btn_rounded"
+        android:id="@+id/search"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Search by liquor type"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:background="@drawable/btn_rounded"
+        android:id="@+id/type"
+        android:layout_below="@id/search"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+
+
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/owuor/Documents/Android/drinksapp/app/src/main/res/layout/activity_navigate.xml -->

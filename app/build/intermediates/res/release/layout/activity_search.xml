@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/applewine"
+    android:padding="10dp"
+    tools:context="com.example.teeshirt.drinksapp.Search">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etSearch"
+        android:hint="Enter drink name"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="210dp"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Search"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:background="@drawable/btn_rounded"
+        android:id="@+id/btnSearch"
+        android:layout_below="@id/etSearch"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/owuor/Documents/Android/drinksapp/app/src/main/res/layout/activity_search.xml -->

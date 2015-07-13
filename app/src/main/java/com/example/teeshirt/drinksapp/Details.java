@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewConfiguration;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,6 +22,7 @@ import com.parse.ParseImageView;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
+import java.lang.reflect.Field;
 import java.util.List;
 
 
@@ -49,6 +51,8 @@ public class Details extends Activity {
         getActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + drinkname + "</font>"));
         getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
         getActionBar().setDisplayHomeAsUpEnabled(true);
+
+        getOverflowMenu();
         //getSupportActionBar().setElevation(1);
         //nom = (TextView)findViewById(R.id.nom);
         price = (TextView)findViewById(R.id.price);
@@ -100,7 +104,7 @@ public class Details extends Activity {
         rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                Toast.makeText(Details.this, "You've rated " + drinkname +" " +String.valueOf(rating), Toast.LENGTH_LONG).show();
+                Toast.makeText(Details.this, "You've rated " + drinkname + " " + String.valueOf(rating), Toast.LENGTH_LONG).show();
                 disabled();
             }
         });
@@ -123,7 +127,26 @@ public class Details extends Activity {
         }
     }
 
+    private void getOverflowMenu(){
+        try {
+            ViewConfiguration configuration = ViewConfiguration.get(this);
+            Field menuKeyField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
+            if (menuKeyField!=null){
+                menuKeyField.setAccessible(true);
+                menuKeyField.setBoolean(configuration, false);
+            }
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_details, menu);
+        return true;
+    }
 }
 
 

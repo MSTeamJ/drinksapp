@@ -1772,6 +1772,7 @@ containing a value of this type.
         public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f09006c;
         public static final int com_facebook_tooltip_bubble_view_text_body=0x7f09006b;
         public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f090069;
+        public static final int comment=0x7f090074;
         public static final int container=0x7f09005e;
         public static final int decor_content_parent=0x7f090045;
         public static final int default_activity_button=0x7f09003a;
