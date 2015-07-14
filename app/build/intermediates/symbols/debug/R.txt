@@ -482,6 +482,7 @@ int id action_mode_bar_stub 0x7f090043
 int id action_mode_close_button 0x7f090036
 int id action_settings 0x7f090073
 int id activity_chooser_view_content 0x7f090037
+int id addcomment 0x7f090075
 int id all 0x7f09005d
 int id always 0x7f090023
 int id beginning 0x7f090021

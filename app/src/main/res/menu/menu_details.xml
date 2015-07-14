@@ -2,12 +2,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.teeshirt.drinksapp.Details">
-    <item android:id="@+id/action_settings" android:title="Share"
-        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="Recipes"
+        android:orderInCategory="98"
+        app:showAsAction="never"
+        android:textSize="10dp"/>
     <item
         android:id="@+id/comment"
-        android:title="Comment"
+        android:title="Comments"
         android:orderInCategory="99"
+        android:textSize="10dp"
+        />
+
+    <item
+        android:id="@+id/addcomment"
+        android:title="Add Comment"
+        android:orderInCategory="100"
+        android:textSize="10dp"
         />
 
 

@@ -52,9 +52,8 @@ public class Details extends Activity {
         getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-        getOverflowMenu();
-        //getSupportActionBar().setElevation(1);
-        //nom = (TextView)findViewById(R.id.nom);
+
+
         price = (TextView)findViewById(R.id.price);
         desc = (TextView)findViewById(R.id.desc);
         pricelabel = (TextView)findViewById(R.id.pricelabel);
@@ -124,20 +123,6 @@ public class Details extends Activity {
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
-        }
-    }
-
-    private void getOverflowMenu(){
-        try {
-            ViewConfiguration configuration = ViewConfiguration.get(this);
-            Field menuKeyField = ViewConfiguration.class.getDeclaredField("sHasPermanentMenuKey");
-            if (menuKeyField!=null){
-                menuKeyField.setAccessible(true);
-                menuKeyField.setBoolean(configuration, false);
-            }
-        }
-        catch (Exception e){
-            e.printStackTrace();
         }
     }
 

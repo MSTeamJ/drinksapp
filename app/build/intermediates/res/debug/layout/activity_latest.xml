@@ -11,8 +11,8 @@
         android:id="@+id/dir"
         android:text="Select a drink category to see the brands under it or search for it by name."
         android:textSize="18dp"
-        android:paddingLeft="55dp"
-        android:paddingRight="50dp"
+        android:paddingLeft="75dp"
+        android:paddingRight="58dp"
         android:paddingTop="150dp"
         android:textColor="#fff"
         android:textAlignment="center"/>
@@ -30,8 +30,8 @@
         android:id="@+id/all"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="10dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"/>
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/owuor/Documents/Android/drinksapp/app/src/main/res/layout/activity_latest.xml -->

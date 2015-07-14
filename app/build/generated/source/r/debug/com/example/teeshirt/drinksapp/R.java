@@ -1750,6 +1750,7 @@ containing a value of this type.
         public static final int action_mode_close_button=0x7f090036;
         public static final int action_settings=0x7f090073;
         public static final int activity_chooser_view_content=0x7f090037;
+        public static final int addcomment=0x7f090075;
         public static final int all=0x7f09005d;
         public static final int always=0x7f090023;
         public static final int beginning=0x7f090021;
