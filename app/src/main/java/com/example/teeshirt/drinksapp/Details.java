@@ -74,7 +74,6 @@ public class Details extends Activity {
             public void done(List<ParseObject> list, ParseException e) {
                 if (e == null) {
                     for (int i=0; i <list.size(); i++){
-                        //nom.setText(list.get(i).getString("name"));
                         price.setText(""+list.get(i).getInt("price")+"/-");
                         desc.setText(list.get(i).getString("description"));
                         ParseFile imageFile = list.get(i).getParseFile("image");
@@ -91,12 +90,12 @@ public class Details extends Activity {
             }
         });
 
-        ratingBarListener();
+       // ratingBarListener();
 
     }
 
 
-    public void ratingBarListener(){
+   /* public void ratingBarListener(){
         rating = (RatingBar)findViewById(R.id.rating);
         //txt = (TextView)findViewById(R.id.txt);
 
@@ -112,7 +111,7 @@ public class Details extends Activity {
     public void disabled(){
         rating.setClickable(false);
         rating.setVisibility(RatingBar.GONE);
-    }
+    }*/
 
 
     @Override

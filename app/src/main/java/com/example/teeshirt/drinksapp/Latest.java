@@ -26,8 +26,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import at.markushi.ui.CircleButton;
-import mehdi.sakout.fancybuttons.FancyButton;
+
 
 
 public class Latest extends Activity {
@@ -63,27 +62,3 @@ public class Latest extends Activity {
 }
 
 
-/*
-ArrayList<String> drinks = new ArrayList<String>();
-final ArrayAdapter<String> drinksAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_activated_1);
-ListView list = (ListView)findViewById(android.R.id.list);
-
-list.setAdapter(drinksAdapter);
-
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Drink");
-        query.findInBackground(new FindCallback<ParseObject>() {
-@Override
-public void done(List<ParseObject> drinksObj, ParseException e) {
-        if (e == null) {
-        for (int i = 0; i < drinksObj.size(); i++) {
-        String name = drinksObj.get(i).getString("name");
-        String category = drinksObj.get(i).getString("category");
-        ParseFile image = drinksObj.get(i).getParseFile("image");
-
-        drinksAdapter.add(name);
-        drinksAdapter.add(category);
-        //drinksAdapter.add(image);
-        }
-        }
-        }
-        });*/

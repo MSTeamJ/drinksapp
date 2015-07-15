@@ -7,8 +7,7 @@
         android:id="@+id/action_settings"
         android:title="Recipes"
         android:orderInCategory="98"
-        app:showAsAction="never"
-        android:textSize="10dp"/>
+        app:showAsAction="never"/>
     <item
         android:id="@+id/comment"
         android:title="Comments"
@@ -20,7 +19,7 @@
         android:id="@+id/addcomment"
         android:title="Add Comment"
         android:orderInCategory="100"
-        android:textSize="10dp"
+
         />
 
 
