@@ -25,6 +25,13 @@ import com.parse.ParseQuery;
 import java.lang.reflect.Field;
 import java.util.List;
 
+import android.content.Intent;
+import com.twitter.sdk.android.core.Callback;
+import com.twitter.sdk.android.core.Result;
+import com.twitter.sdk.android.core.TwitterException;
+import com.twitter.sdk.android.core.TwitterSession;
+import com.twitter.sdk.android.core.identity.TwitterLoginButton;
+
 
 public class Details extends Activity {
     public Bundle namebundle;
@@ -32,6 +39,7 @@ public class Details extends Activity {
     private TextView nom, price, desc, pricelabel,rater;
     private ParseImageView parseImageView;
     private RatingBar rating;
+    private TwitterLoginButton loginButton;
 
 
     @Override
@@ -73,12 +81,12 @@ public class Details extends Activity {
             @Override
             public void done(List<ParseObject> list, ParseException e) {
                 if (e == null) {
-                    for (int i=0; i <list.size(); i++){
-                        price.setText(""+list.get(i).getInt("price")+"/-");
+                    for (int i = 0; i < list.size(); i++) {
+                        price.setText("" + list.get(i).getInt("price") + "/-");
                         desc.setText(list.get(i).getString("description"));
                         ParseFile imageFile = list.get(i).getParseFile("image");
 
-                        if (imageFile!=null){
+                        if (imageFile != null) {
                             parseImageView.setParseFile(imageFile);
                             parseImageView.loadInBackground();
                         }
@@ -87,6 +95,19 @@ public class Details extends Activity {
                 } else {
                     Toast.makeText(Details.this, "Sijaget kitu", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
+        loginButton.setCallback(new Callback<TwitterSession>() {
+            @Override
+            public void success(Result<TwitterSession> result) {
+                // Do something with result, which provides a TwitterSession for making API calls
+            }
+
+            @Override
+            public void failure(TwitterException exception) {
+                // Do something on failure
             }
         });
 
@@ -130,6 +151,13 @@ public class Details extends Activity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_details, menu);
         return true;
+    }
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        loginButton.onActivityResult(requestCode, resultCode, data);
     }
 }
 
