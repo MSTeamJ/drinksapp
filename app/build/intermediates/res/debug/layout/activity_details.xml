@@ -83,6 +83,7 @@
                     android:layout_weight="0.7">
                     <EditText
                         android:layout_width="fill_parent"
+                        android:layout_below="@+id/rater"
                         android:layout_height="wrap_content"
                         android:hint="Write Comment here"/>
                 </LinearLayout>
