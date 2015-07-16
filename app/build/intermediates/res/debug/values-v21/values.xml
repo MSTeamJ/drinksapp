@@ -291,6 +291,13 @@
     <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="android:Widget.Material.TextView.SpinnerItem"/>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget.Material.Toolbar.Button.Navigation">
     </style>
+    <!-- From: file:/C:/Users/owuor/Documents/Android/drinksapp/app/build/intermediates/exploded-aar/com.digits.sdk.android/digits/1.6.0/res/values-v21/values.xml -->
+    <eat-comment/>
+    <style name="Digits_default" parent="@android:style/Theme.Material.Light">
+        <item name="dgts__accentColor">?android:attr/colorAccent</item>
+    </style>
+    <!-- From: file:/C:/Users/owuor/Documents/Android/drinksapp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-v21/values.xml -->
+    <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme.Material">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
@@ -306,5 +313,11 @@
     <style name="Platform.AppCompat.Light.Dialog" parent="android:Theme.Material.Light.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
+    </style>
+    <!-- From: file:/C:/Users/owuor/Documents/Android/drinksapp/app/build/intermediates/exploded-aar/com.twitter.sdk.android/tweet-ui/1.3.0/res/values-v21/values.xml -->
+    <eat-comment/>
+    <style name="tw__TweetFullName" parent="tw__TweetFullNameBase">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:importantForAccessibility">no</item>
     </style>
 </resources>

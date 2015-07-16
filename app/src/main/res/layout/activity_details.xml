@@ -70,6 +70,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:id="@+id/llComment"
                 android:layout_below="@+id/rater">
                 <LinearLayout
                     android:layout_width="0dp"
@@ -86,12 +87,18 @@
                         android:layout_width="fill_parent"
                         android:layout_below="@+id/rater"
                         android:layout_height="wrap_content"
+                        android:id="@+id/etComment"
                         android:hint="Write Comment here"/>
                 </LinearLayout>
             </LinearLayout>
 
 
-
+            <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                android:layout_below="@+id/llComment"
+                android:id="@+id/twitter_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
 
         </RelativeLayout>
     </ScrollView>
