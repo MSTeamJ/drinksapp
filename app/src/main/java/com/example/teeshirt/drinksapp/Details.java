@@ -2,6 +2,7 @@ package com.example.teeshirt.drinksapp;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -10,7 +11,9 @@ import android.os.Bundle;
 import android.text.Html;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.ViewConfiguration;
+import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -40,6 +43,7 @@ public class Details extends Activity {
     private ParseImageView parseImageView;
     private RatingBar rating;
     private TwitterLoginButton loginButton;
+    private EditText etComment;
 
 
     @Override
@@ -66,6 +70,7 @@ public class Details extends Activity {
         desc = (TextView)findViewById(R.id.desc);
         pricelabel = (TextView)findViewById(R.id.pricelabel);
         rater = (TextView)findViewById(R.id.rater);
+
 
         parseImageView = (ParseImageView)findViewById(R.id.pic);
 
@@ -112,6 +117,7 @@ public class Details extends Activity {
         });
 
        // ratingBarListener();
+        twitterLogin();
 
     }
 
@@ -158,6 +164,21 @@ public class Details extends Activity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         loginButton.onActivityResult(requestCode, resultCode, data);
+    }
+
+    public void twitterLogin(){
+        etComment = (EditText)findViewById(R.id.etComment);
+        etComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(Details.this);
+                builder.setMessage("twii").setCancelable(true);
+
+                AlertDialog alert = builder.create();
+                alert.setTitle("Twitter Login");
+                alert.show();
+            }
+        });
     }
 }
 

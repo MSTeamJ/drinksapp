@@ -18,7 +18,8 @@ import com.parse.ParseObject;
 
 
 
-public class MainActivity extends ActionBarActivity {
+public class
+        MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
