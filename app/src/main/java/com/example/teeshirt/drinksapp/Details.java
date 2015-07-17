@@ -13,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewConfiguration;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.RatingBar;
 import android.widget.TextView;
@@ -64,7 +65,7 @@ public class Details extends Activity {
         getActionBar().setIcon(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
 
         price = (TextView)findViewById(R.id.price);
         desc = (TextView)findViewById(R.id.desc);
@@ -172,7 +173,7 @@ public class Details extends Activity {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(Details.this);
-                builder.setMessage("twii").setCancelable(true);
+                //builder.setMessage("twii" ).setCancelable(true);
 
                 AlertDialog alert = builder.create();
                 alert.setTitle("Twitter Login");
