@@ -174,7 +174,7 @@ public class Details extends Activity {
             @Override
             public void onClick(View v) {
                 Dialog dialog = new Dialog(Details.this);
-                dialog.setContentView();
+                dialog.setContentView(R.layout.twitter_login);
                 dialog.show();
             }
         });
