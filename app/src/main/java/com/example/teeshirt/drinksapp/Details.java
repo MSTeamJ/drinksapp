@@ -3,6 +3,7 @@ package com.example.teeshirt.drinksapp;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
@@ -172,15 +173,19 @@ public class Details extends Activity {
         etComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(Details.this);
-                //builder.setMessage("twii" ).setCancelable(true);
-
-                AlertDialog alert = builder.create();
-                alert.setTitle("Twitter Login");
-                alert.show();
+                Dialog dialog = new Dialog(Details.this);
+                dialog.setContentView();
+                dialog.show();
             }
         });
     }
 }
 
 
+/*AlertDialog.Builder builder = new AlertDialog.Builder(Details.this);
+                //builder.setMessage("twii" ).setCancelable(true);
+
+
+                AlertDialog alert = builder.create();
+                alert.setTitle("Twitter Login");
+                alert.show();*/
