@@ -105,7 +105,7 @@ public class Details extends Activity {
             }
         });
 
-        loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
+       /* loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
         loginButton.setCallback(new Callback<TwitterSession>() {
             @Override
             public void success(Result<TwitterSession> result) {
@@ -116,10 +116,10 @@ public class Details extends Activity {
             public void failure(TwitterException exception) {
                 // Do something on failure
             }
-        });
+        });*/
 
        // ratingBarListener();
-        twitterLogin();
+        //twitterLogin();
 
     }
 
