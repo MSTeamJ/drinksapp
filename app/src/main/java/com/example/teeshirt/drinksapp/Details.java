@@ -119,13 +119,13 @@ public class Details extends Activity {
         });*/
 
        // ratingBarListener();
-        //twitterLogin();
+        twitterLogin();
 
     }
 
 
-   /* public void ratingBarListener(){
-        rating = (RatingBar)findViewById(R.id.rating);
+    public void ratingBarListener(){
+        //rating = (RatingBar)findViewById(R.id.rating);
         //txt = (TextView)findViewById(R.id.txt);
 
         rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
@@ -140,7 +140,7 @@ public class Details extends Activity {
     public void disabled(){
         rating.setClickable(false);
         rating.setVisibility(RatingBar.GONE);
-    }*/
+    }
 
 
     @Override
@@ -181,11 +181,3 @@ public class Details extends Activity {
     }
 }
 
-
-/*AlertDialog.Builder builder = new AlertDialog.Builder(Details.this);
-                //builder.setMessage("twii" ).setCancelable(true);
-
-
-                AlertDialog alert = builder.create();
-                alert.setTitle("Twitter Login");
-                alert.show();*/

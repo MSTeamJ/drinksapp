@@ -23,7 +23,7 @@ public class splash extends ActionBarActivity {
         Thread splash = new Thread(){
             public void run(){
                 try {
-                   sleep(5000);
+                   sleep(3000);
                     Intent intent = new Intent(splash.this, MainActivity.class);
                     startActivity(intent);
                     finish();
