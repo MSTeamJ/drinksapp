@@ -119,7 +119,14 @@ public class Details extends Activity {
         });*/
 
        // ratingBarListener();
-        twitterLogin();
+        etComment = (EditText)findViewById(R.id.etComment);
+        etComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Details.this, TwitterLogin.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -168,16 +175,6 @@ public class Details extends Activity {
         loginButton.onActivityResult(requestCode, resultCode, data);
     }
 
-    public void twitterLogin(){
-        etComment = (EditText)findViewById(R.id.etComment);
-        etComment.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Dialog dialog = new Dialog(Details.this);
-                dialog.setContentView(R.layout.twitter_login);
-                dialog.show();
-            }
-        });
-    }
+
 }
 
