@@ -53,9 +53,12 @@ public class Details extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
+        loadDetails();
+        commenting();
+    }
 
 
-
+    public  void  loadDetails(){
         namebundle = getIntent().getExtras();
         if (namebundle!=null){
             drinkname = namebundle.getString("drinkname");
@@ -104,10 +107,11 @@ public class Details extends Activity {
                 }
             }
         });
+    }
 
 
 
-       // ratingBarListener();
+    public void commenting(){
         tokenbundle=getIntent().getExtras();
         if (tokenbundle!=null){
             twToken=tokenbundle.getString("activetoken");
@@ -117,32 +121,17 @@ public class Details extends Activity {
         etComment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Details.this, TwitterLogin.class);
-                startActivity(intent);
-            }
-        });
+                if (twToken==null || twToken.equals("")){
+                    Intent intent = new Intent(Details.this, TwitterLogin.class);
+                    startActivity(intent);
+                }
+                else{
+                    Toast.makeText(Details.this, twToken, Toast.LENGTH_SHORT).show();
+                }
 
-    }
-
-
-    public void ratingBarListener(){
-        //rating = (RatingBar)findViewById(R.id.rating);
-        //txt = (TextView)findViewById(R.id.txt);
-
-        rating.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
-            @Override
-            public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
-                Toast.makeText(Details.this, "You've rated " + drinkname + " " + String.valueOf(rating), Toast.LENGTH_LONG).show();
-                disabled();
             }
         });
     }
-
-    public void disabled(){
-        rating.setClickable(false);
-        rating.setVisibility(RatingBar.GONE);
-    }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -163,8 +152,10 @@ public class Details extends Activity {
     }
 
 
-
-
-
+    @Override
+    protected void onResume() {
+        loadDetails();
+        commenting();
+    }
 }
 
