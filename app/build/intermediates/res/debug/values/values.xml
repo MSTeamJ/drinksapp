@@ -402,6 +402,7 @@
     <string name="title_activity_splash">DrinksApp</string>
     <string name="title_activity_talk">Talk</string>
     <string name="title_activity_tequilla">Tequilla</string>
+    <string name="title_activity_twitter_login">TwitterLogin</string>
     <string name="title_activity_vodka">Vodka</string>
     <string name="title_activity_whiskey">Whiskey</string>
     <string name="title_activity_wine">Wine</string>

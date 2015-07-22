@@ -126,6 +126,10 @@
             android:value="188d6461544e1fc12720784f57e56ccb8864987a" />
 
         <activity
+            android:name="com.example.teeshirt.drinksapp.TwitterLogin"
+            android:label="@string/title_activity_twitter_login" >
+        </activity>
+        <activity
             android:name="com.twitter.sdk.android.core.identity.OAuthActivity"
             android:configChanges="orientation|screenSize"
             android:excludeFromRecents="true"

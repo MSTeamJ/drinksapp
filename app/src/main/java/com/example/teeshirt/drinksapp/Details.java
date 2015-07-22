@@ -39,8 +39,8 @@ import com.twitter.sdk.android.core.identity.TwitterLoginButton;
 
 
 public class Details extends Activity {
-    public Bundle namebundle;
-    private String drinkname;
+    public Bundle namebundle, tokenbundle;
+    private String drinkname, twToken;
     private TextView nom, price, desc, pricelabel,rater;
     private ParseImageView parseImageView;
     private RatingBar rating;
@@ -108,6 +108,11 @@ public class Details extends Activity {
 
 
        // ratingBarListener();
+        tokenbundle=getIntent().getExtras();
+        if (tokenbundle!=null){
+            twToken=tokenbundle.getString("activetoken");
+        }
+
         etComment = (EditText)findViewById(R.id.etComment);
         etComment.setOnClickListener(new View.OnClickListener() {
             @Override
