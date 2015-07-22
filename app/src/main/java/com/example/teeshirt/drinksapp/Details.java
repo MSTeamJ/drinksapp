@@ -44,7 +44,7 @@ public class Details extends Activity {
     private TextView nom, price, desc, pricelabel,rater;
     private ParseImageView parseImageView;
     private RatingBar rating;
-    private TwitterLoginButton loginButton;
+
     private EditText etComment;
 
 
@@ -105,18 +105,7 @@ public class Details extends Activity {
             }
         });
 
-       /* loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
-        loginButton.setCallback(new Callback<TwitterSession>() {
-            @Override
-            public void success(Result<TwitterSession> result) {
-                // Do something with result, which provides a TwitterSession for making API calls
-            }
 
-            @Override
-            public void failure(TwitterException exception) {
-                // Do something on failure
-            }
-        });*/
 
        // ratingBarListener();
         etComment = (EditText)findViewById(R.id.etComment);
@@ -169,11 +158,7 @@ public class Details extends Activity {
     }
 
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-        loginButton.onActivityResult(requestCode, resultCode, data);
-    }
+
 
 
 }

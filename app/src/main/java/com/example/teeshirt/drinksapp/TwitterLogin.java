@@ -1,17 +1,43 @@
 package com.example.teeshirt.drinksapp;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.twitter.sdk.android.core.TwitterException;
+import com.twitter.sdk.android.core.TwitterSession;
+import com.twitter.sdk.android.core.identity.TwitterLoginButton;
+import com.twitter.sdk.android.core.Callback;
+import com.twitter.sdk.android.core.Result;
+
+
+
+
 
 public class TwitterLogin extends ActionBarActivity {
+
+    private TwitterLoginButton loginButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twitter_login);
+
+
+         loginButton = (TwitterLoginButton) findViewById(R.id.twitter_login_button);
+        loginButton.setCallback(new Callback<TwitterSession>() {
+            @Override
+            public void success(Result<TwitterSession> result) {
+                // Do something with result, which provides a TwitterSession for making API calls
+            }
+
+            @Override
+            public void failure(TwitterException exception) {
+                // Do something on failure
+            }
+        });
     }
 
     @Override
@@ -34,5 +60,13 @@ public class TwitterLogin extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        loginButton.onActivityResult(requestCode, resultCode, data);
     }
 }
