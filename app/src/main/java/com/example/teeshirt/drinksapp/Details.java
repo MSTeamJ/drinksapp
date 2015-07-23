@@ -153,7 +153,7 @@ public class Details extends Activity {
 
 
     @Override
-    protected void onResume() {
+    protected void onRestart() {
         loadDetails();
         commenting();
     }
